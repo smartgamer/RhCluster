@@ -15,7 +15,7 @@ Visualizing clustering in 3d view
 Complete code
 Summary
 
-## Implementing hierarchical clustering in R programming language
+### Implementing hierarchical clustering in R programming language
 Data Preparation
 To perform a cluster analysis in R, generally, the data should be prepared as follows:
 
@@ -23,7 +23,7 @@ Rows are observations (individuals) and columns are variables
 Any missing value in the data must be removed or estimated.
 The data must be standardized (i.e., scaled) to make variables comparable. Recall that, standardization consists of transforming the variables such that they have mean zero and standard deviation one.
 
-## Packages need to perform hierarchical clustering
+### Packages need to perform hierarchical clustering
 hclust [in stats package]
 agnes [in cluster package]
 We can perform agglomerative HC with hclust. First, we compute the dissimilarity values with dist and then feed these values into hclust and specify the agglomeration method to be used (i.e. “complete”, “average”, “single”, “ward.D”). We can plot the dendrogram after this.
@@ -31,7 +31,7 @@ We can perform agglomerative HC with hclust. First, we compute the dissimilarity
 Alternatively, we can use the agnes function. These functions behave very similarly; however, with the agnes function, we can also get the agglomerative coefficient, which measures the amount of clustering structure found (values closer to 1 suggest strong clustering structure).
 This allows us to find certain hierarchical clustering methods that can identify stronger clustering structures. Here we see that Ward’s method identifies the strongest clustering structure of the four methods assessed.
 
-## Visualizing clustering in 3d view
+### Visualizing clustering in 3d view
 Let’s examine, this time visually. How this algorithm proceeds using a simple dataset. 
 
 As visual representations are limited to three dimensions, we will only use three attributes, but the computation is similar if we use more attributes. We will display these using the scatterplot3d() function of the plot3D package. 
